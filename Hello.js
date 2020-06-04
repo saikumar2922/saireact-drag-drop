@@ -12,15 +12,15 @@ class Hello extends Component {
       todos: this.getTodosFromStorage() || [
         {
           taskID: 1,
-          task: "Walk the walk"
+          task: "sai the walk"
         },
         {
           taskID: 2,
-          task: "Talk the talk"
+          task: "sai the talk"
         },
         {
           taskID: 3,
-          task: "Jump the jump"
+          task: "sai the jump"
         }
       ],
       completedTasks: this.getCompletedFromStorage() || [
@@ -132,6 +132,7 @@ onDragOverTodo = event => {
  let { count, increment} = this.props.store
      return (
       <div>
+      <p>this is from store</p>
         <h1>{count}</h1>
          <button onClick={() => {
             increment()
